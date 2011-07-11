@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    news_points:
+      title: News Points
+  admin:
+    news_points:
+      actions:
+        create_new: Lag en ny News Point
+        reorder: Endre rekkefølgen på News Points
+        reorder_done: Ferdig å endre rekkefølgen News Points
+      records:
+        title: News Points
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen News Points enda. Klikk på "Lag en ny News Point" for å legge til din første news point.
+      news_point:
+        view_live_html: Vis hvordan denne news point ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne news point
+        delete: Fjern denne news point permanent
+  news_points:
+    show:
+      other: Andre News Points

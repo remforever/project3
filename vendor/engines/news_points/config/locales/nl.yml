@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    news_points:
+      title: News Points
+  admin:
+    news_points:
+      actions:
+        create_new: Maak een nieuwe News Point
+        reorder: Wijzig de volgorde van de News Points
+        reorder_done: Klaar met het wijzingen van de volgorde van de News Points
+      records:
+        title: News Points
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen News Points. Druk op 'Maak een nieuwe News Point' om de eerste aan te maken.
+      news_point:
+        view_live_html: Bekijk deze news point op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze news point
+        delete: Verwijder deze news point voor eeuwig
+  news_points:
+    show:
+      other: Andere News Points

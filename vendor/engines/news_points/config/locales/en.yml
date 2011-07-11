@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    news_points:
+      title: News Points
+  admin:
+    news_points:
+      actions:
+        create_new: Add New News Point
+        reorder: Reorder News Points
+        reorder_done: Done Reordering News Points
+      records:
+        title: News Points
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no News Points yet. Click "Add New News Point" to add your first news point.
+      news_point:
+        view_live_html: View this news point live <br/><em>(opens in a new window)</em>
+        edit: Edit this news point
+        delete: Remove this news point forever
+  news_points:
+    show:
+      other: Other News Points

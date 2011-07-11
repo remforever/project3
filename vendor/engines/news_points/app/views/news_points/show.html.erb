@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @news_point.title %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @news_point.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Content</h1>
+    <p>
+      <%=raw @news_point.content %>
+    </p>
+  </section>
+  <section>
+    <h1>Cover</h1>
+    <p>
+      <%= image_fu @news_point.cover, nil %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="news_points">
+      <% @news_points.each do |news_point| %>
+        <li>
+          <%= link_to news_point.title, news_point_path(news_point) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

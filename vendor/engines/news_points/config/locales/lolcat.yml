@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    news_points:
+      title: News Points
+  admin:
+    news_points:
+      actions:
+        create_new: CREATE NEW News Point
+        reorder: REORDR News Points
+        reorder_done: DUN REORDERIN News Points
+      records:
+        title: News Points
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO News Points YET. CLICK "CREATE NEW News Point" 2 ADD UR FURST news point.
+      news_point:
+        view_live_html: VIEW DIS news point LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS news point
+        delete: REMOOV DIS news point FOREVR
+  news_points:
+    show:
+      other: OTHR News Points
