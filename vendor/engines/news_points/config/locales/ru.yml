@@ -1,0 +1,25 @@
+ru:
+  shared:
+    admin:
+      image_picker:
+        image: изображение
+  plugins:
+    news_points:
+      title: Новости
+  admin:
+    news_points:
+      actions:
+        create_new: Добавить новость
+        reorder: изменить порядок
+        reorder_done: порядок изменен
+      records:
+        title: Новости
+        sorry_no_results: К сожалению ничего не найдено
+        no_items_yet: Пока новостей нет. Но это легко исправить. Нажмите "добавить новость"!
+      news_point:
+        view_live_html: Посмотреть как новость будет выглядеть
+        edit: Редактировать
+        delete: Удалить
+  news_points:
+    show:
+      other: Другие новости
