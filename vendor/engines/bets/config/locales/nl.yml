@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    bets:
+      title: Bets
+  admin:
+    bets:
+      actions:
+        create_new: Maak een nieuwe Bet
+        reorder: Wijzig de volgorde van de Bets
+        reorder_done: Klaar met het wijzingen van de volgorde van de Bets
+      records:
+        title: Bets
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Bets. Druk op 'Maak een nieuwe Bet' om de eerste aan te maken.
+      bet:
+        view_live_html: Bekijk deze bet op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze bet
+        delete: Verwijder deze bet voor eeuwig
+  bets:
+    show:
+      other: Andere Bets

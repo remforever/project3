@@ -1,0 +1,63 @@
+<% content_for :body_content_title do %>
+  <%= @bet.result %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Football Match</h1>
+    <p>
+      <%=raw @bet.football_match_id %>
+    </p>
+  </section>
+  <section>
+    <h1>Win1</h1>
+    <p>
+      <%=raw @bet.win1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Draw</h1>
+    <p>
+      <%=raw @bet.draw %>
+    </p>
+  </section>
+  <section>
+    <h1>Win2</h1>
+    <p>
+      <%=raw @bet.win2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Date Start</h1>
+    <p>
+      <%=raw @bet.date_start %>
+    </p>
+  </section>
+  <section>
+    <h1>Result</h1>
+    <p>
+      <%=raw @bet.result %>
+    </p>
+  </section>
+  <section>
+    <h1>Match Result</h1>
+    <p>
+      <%=raw @bet.match_result %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="bets">
+      <% @bets.each do |bet| %>
+        <li>
+          <%= link_to bet.result, bet_path(bet) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

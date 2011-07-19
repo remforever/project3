@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    bets:
+      title: Bets
+  admin:
+    bets:
+      actions:
+        create_new: Add New Bet
+        reorder: Reorder Bets
+        reorder_done: Done Reordering Bets
+      records:
+        title: Bets
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Bets yet. Click "Add New Bet" to add your first bet.
+      bet:
+        view_live_html: View this bet live <br/><em>(opens in a new window)</em>
+        edit: Edit this bet
+        delete: Remove this bet forever
+  bets:
+    show:
+      other: Other Bets

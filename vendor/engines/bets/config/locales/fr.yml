@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    bets:
+      title: Bets
+  admin:
+    bets:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Bet
+        reorder: Réordonner les Bets
+        reorder_done: Fin de réordonnancement des Bets
+      records:
+        title: Bets
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Bet. Cliquer sur "Créer un(e) nouve(au/l/lle) Bet" pour créer votre premi(er/ère) bet.'
+      bet:
+        view_live_html: Voir ce(t/tte) bet <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) bet
+        delete: Supprimer définitivement ce(t/tte) bet
+  bets:
+    show:
+      other: Autres Bets

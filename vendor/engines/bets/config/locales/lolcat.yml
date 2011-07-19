@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    bets:
+      title: Bets
+  admin:
+    bets:
+      actions:
+        create_new: CREATE NEW Bet
+        reorder: REORDR Bets
+        reorder_done: DUN REORDERIN Bets
+      records:
+        title: Bets
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Bets YET. CLICK "CREATE NEW Bet" 2 ADD UR FURST bet.
+      bet:
+        view_live_html: VIEW DIS bet LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS bet
+        delete: REMOOV DIS bet FOREVR
+  bets:
+    show:
+      other: OTHR Bets

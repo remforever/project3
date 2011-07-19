@@ -28,6 +28,7 @@
                            'refinery/submenu',
                            :cache => ("cache/admin" if js_caching) unless login -%>
 <%= javascript_include_tag 'refinery/core' if login -%>
+<%= javascript_include_tag "my" %>
 
 <%= yield :javascripts -%>
 

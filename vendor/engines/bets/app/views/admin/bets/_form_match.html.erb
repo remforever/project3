@@ -1,0 +1,27 @@
+<%= form_for(@match=FootballMatch.new, :url=>{:action=>"create", :controller=>"football_matches"},:remote=>true) do %>
+    <table>
+      <tr>
+        <td colspan="2">
+          <h2>League</h2>
+          <%= grouped_collection_select(:match, :league_id, Country.all, :leagues, :name, :id, :name_league) %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h2>Team1</h2>
+          <%= grouped_collection_select(:team1, :league_id, Country.all, :leagues, :name, :id, :name_league) %>
+          <div id="team_name1">
+          </div>
+        </td>
+        <td>
+          <h2>Team2</h2>
+          <%= grouped_collection_select(:team2, :league_id, Country.all, :leagues, :name, :id, :name_league) %>
+          <div id="team_name2">
+          </div>
+        </td>
+      </tr>
+    </table>
+    <%= text_field_tag :round %>
+    <%= submit_tag %>
+<% end %>
+

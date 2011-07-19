@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="bets">
+    <% @bets.each do |bet| %>
+      <li>
+        <%= link_to bet.result, bet_path(bet) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

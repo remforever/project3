@@ -1,0 +1,9 @@
+<% if params[:team]=="1" %>
+    <%= select_tag :team1_id, options_from_collection_for_select(@teams, "id", "name_team") %>
+<% elsif params[:team]=="2" %>
+    <%= select_tag :team2_id, options_from_collection_for_select(@teams, "id", "name_team") %>
+<% else
+       if params[:team]=="0" %>
+        <%= cycle((select_tag :team1_id, options_from_collection_for_select(@teams, "id", "name_team")),(select_tag :team2_id, options_from_collection_for_select(@teams, "id", "name_team")) )%>
+    <% end %>
+<% end %>

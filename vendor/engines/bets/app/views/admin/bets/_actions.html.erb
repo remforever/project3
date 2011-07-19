@@ -1,0 +1,32 @@
+<ul>
+  <% if Admin::BetsController.searchable? %>
+      <li>
+        <%= render :partial => "/shared/admin/search",
+                   :locals => {
+                           :url => admin_bets_path
+                   } %>
+      </li>
+  <% end %>
+  <li>
+    <%= link_to "Settings",settings_admin_bets_path, :class => "add_icon" %>
+  </li>
+  <li>
+
+    <%= link_to t('.create_new'), new_admin_bet_path,
+                :class => "add_icon" %>
+  </li>
+  <% if !searching? and Admin::BetsController.sortable? and Bet.count > 1 %>
+      <li>
+        <%= link_to t('.reorder', :what => "Bets"),
+                    admin_bets_path,
+                    :id => "reorder_action",
+                    :class => "reorder_icon" %>
+
+        <%= link_to t('.reorder_done', :what => "Bets"),
+                    admin_bets_path,
+                    :id => "reorder_action_done",
+                    :style => "display: none;",
+                    :class => "reorder_icon" %>
+      </li>
+  <% end %>
+</ul>

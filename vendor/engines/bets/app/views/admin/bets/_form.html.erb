@@ -1,0 +1,49 @@
+<%= form_for [:admin, @bet] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @bet,
+          :include_object_name => true
+        } %>
+
+  <div class='field'>
+    <%= f.label :football_match_id, :id=>"match_name" -%>
+    <%= f.text_field :football_match_id, :hint=>false %>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :win1 -%>
+    <%= f.text_field :win1  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :draw -%>
+    <%= f.text_field :draw  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :win2 -%>
+    <%= f.text_field :win2  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :date_start -%>
+    <%= f.datetime_select :date_start  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :result -%>
+    <%= f.text_field :result  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :match_result -%>
+    <%= f.text_field :match_result  -%>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.bets.bet'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @bet.result)
+              } %>
+<% end -%>

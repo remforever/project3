@@ -1,0 +1,5 @@
+$('#new_football_match')[0].reset();
+$("#bet_football_match_id").val("<%= @match.id %>");
+$("#match_name").text("<%= @match.team1.name_team+" vs "+@match.team2.name_team  %>");
+
+

@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    bets:
+      title: Bets
+  admin:
+    bets:
+      actions:
+        create_new: Lag en ny Bet
+        reorder: Endre rekkefølgen på Bets
+        reorder_done: Ferdig å endre rekkefølgen Bets
+      records:
+        title: Bets
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Bets enda. Klikk på "Lag en ny Bet" for å legge til din første bet.
+      bet:
+        view_live_html: Vis hvordan denne bet ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne bet
+        delete: Fjern denne bet permanent
+  bets:
+    show:
+      other: Andre Bets
